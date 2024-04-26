@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="575.0" prefWidth="709.0"
+            stylesheets="@quiz_style.css"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.Service.QuizControllerFXML">
+
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <Label fx:id="questionLabel" styleClass="question-label" />
+            <HBox spacing="10" alignment="CENTER">
+                <Button fx:id="trueButton" onAction="#handleChoiceButtonClick" text="Vrai" styleClass="choice-button" />
+                <Button fx:id="falseButton" onAction="#handleChoiceButtonClick" text="Faux" styleClass="choice-button" />
+            </HBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <Button text="Précédent" onAction="#goToPreviousQuestion" styleClass="navigation-button" />
+            <Button text="Suivant" onAction="#goToNextQuestion" styleClass="navigation-button" />
+        </HBox>
+    </bottom>
+
+</BorderPane>

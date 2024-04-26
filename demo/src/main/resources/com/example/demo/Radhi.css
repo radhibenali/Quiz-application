@@ -1,0 +1,158 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/*
+    Created on : 10 mars 2023, 06:27:03
+    Author     : ASUS
+*/
+/* Styliser les labels */
+.table-view {
+    -fx-background-color: rgb(19, 11, 82);
+    -fx-padding: 10 ;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: #b21a1a #d9d9d9 #d9d9d9 #c3c3c3;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, #170000, 5, 0, 0, 1);
+}
+
+.table-column-header-background {
+    -fx-background-color: #b07272;
+}
+
+.table-header {
+    -fx-text-fill: rgb(274, 282, 70);
+    -fx-font-weight: bold;
+}
+
+
+.table-cell {
+    -fx-border-color: tan;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+/* Style pour les lignes de sélection */
+.table-row-cell:selected {
+    -fx-background-color: #6a5acd;
+    -fx-text-fill: rgba(255, 255, 255, 0.579);
+}
+
+
+
+.button {
+    -fx-background-color: plum;
+    -fx-padding: 10 ;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: #c3c3c3 #d9d9d9 #d9d9d9 #c3c3c3;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, #c3c3c3, 5, 0, 0, 1);
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+
+    -fx-alignment: center;
+}
+
+.button:hover {
+    -fx-background-color: #d9d9d9;
+    -fx-text-fill: white;
+    -fx-effect: innershadow(gaussian, #c3c3c3, 5, 0, 0, 1);
+}
+
+
+
+.button:pressed {
+    -fx-background-color: #003388;
+}
+
+
+.button:disabled {
+    -fx-opacity: 0.5;
+}
+
+.button:focus {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.button:active {
+    -fx-background-color: #003388;
+}
+
+.button:active:hover {
+    -fx-background-color: #002266;
+    -fx-text-fill: #eee;
+}
+
+.button:hover:pressed {
+    -fx-background-color: #002266;
+    -fx-text-fill: #eee;
+    -fx-cursor: hand;
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+}
+
+.button:disabled {
+    -fx-opacity: 0.5;
+}
+
+.button:disabled:hover {
+    -fx-cursor: default;
+}
+.label {
+
+    -fx-background-color: plum;
+    -fx-padding: 10 ;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: #c3c3c3 #d7d9d9 #d977d9d9 #c3c3c3;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, #c3c3c3, 5, 0, 0, 1);
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+
+    -fx-alignment: center;
+}
+
+.label:hover {
+    -fx-background-color: #2f5ccb;
+    -fx-text-fill: rgb(147, 48, 48);
+    -fx-effect: innershadow(gaussian, #c3c3c3, 5, 0, 0, 1);
+
+}
+
+text-field {
+    -fx-padding: 5px;
+    -fx-border-style: solid;
+    -fx-border-color: green;
+    -fx-border-width: 2px;
+}
+.text-field {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+.text-field:focused {
+    -fx-background-color: darkred;
+}
+
+
+
+.text-field .caret {
+    -fx-caret-color: green;
+}
+.text-field:hover {
+    -fx-background-color: #d9d9d9;
+    -fx-text-fill: green;
+    -fx-effect: innershadow(gaussian, #c3c3c3, 5, 0, 0, 1);
+
+}

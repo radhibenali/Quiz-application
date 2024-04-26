@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+<AnchorPane prefHeight="646.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Service.Chat">
+   <children>
+      <Hyperlink fx:id="hyperlink" layoutX="455.0" layoutY="72.0" onAction="#hyper" prefHeight="24.0" prefWidth="182.0" text="Hyperlink" />
+      <ScrollPane layoutX="42.0" layoutY="111.0" prefHeight="475.0" prefWidth="474.0">
+         <content>
+            <TextArea fx:id="textchat" prefHeight="461.0" prefWidth="474.0" />
+         </content>
+      </ScrollPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="372.0" />
+      <TextField fx:id="ask" layoutX="42.0" layoutY="594.0" onAction="#userAsk" prefHeight="44.0" prefWidth="474.0" />
+      <WebView fx:id="web" layoutX="516.0" layoutY="111.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+/* quiz_style.css */
+
+.question-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.choice-button {
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+}
+
+.navigation-button {
+    -fx-font-size: 16px;
+    -fx-padding: 8px 16px;
+    -fx-background-color: #008CBA; /* Blue */
+    -fx-text-fill: white;
+}
